@@ -2,6 +2,7 @@
 import { useI18n } from 'vue-i18n'
 
 useHead({
+  title: 'About Me',
 })
 
 onMounted(() => {
@@ -44,17 +45,11 @@ const { data: services } = await useFetch('/api/services')
 
     <section class="about-text">
       <p>
-        I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
-        I enjoy
-        turning complex problems into simple, beautiful and intuitive designs.
+        I am Prashant Kumar, a passionate Software Engineer and Web Developer from India. I specialize in building scalable, efficient, and user-friendly web applications. With a strong foundation in modern web technologies and a problem-solving mindset, I enjoy turning complex requirements into elegant solutions.
       </p>
 
       <p>
-        My job is to build your website so that it is functional and user-friendly but at the same time attractive.
-        Moreover, I
-        add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
-        across your
-        message and identity in the most creative way. I created web design for many famous brand companies.
+        My experience includes developing distributed backend systems, video conferencing tools, and security scanning solutions. I am dedicated to continuously learning and improving my skills to stay on the cutting edge of the tech industry.
       </p>
     </section>
 
@@ -62,7 +57,7 @@ const { data: services } = await useFetch('/api/services')
 
     <section class="service">
       <h3 class="h3 service-title">
-        What i'm doing?
+        What I'm doing
       </h3>
 
       <ul class="service-list">
@@ -81,7 +76,7 @@ const { data: services } = await useFetch('/api/services')
         <li v-for="testimonial in testimonials" :key="testimonial.id" class="testimonials-item" @click="showTestimonial(testimonial.id)">
           <div class="content-card">
             <figure class="testimonials-avatar-box">
-              <img :src="testimonial.image" alt="Daniel lewis" width="60">
+              <img :src="testimonial.image" alt="Testimonial author" width="60">
             </figure>
 
             <h4 class="h4 testimonials-item-title">
@@ -108,7 +103,7 @@ const { data: services } = await useFetch('/api/services')
 
         <div class="flex gap-5 mb-5 justify-start items-center">
           <div class="modal-avatar-box">
-            <img :src="testimonialItem.image" alt="Daniel lewis" width="80">
+            <img :src="testimonialItem.image" alt="Testimonial author" width="80">
           </div>
 
           <div class="modal-content">
