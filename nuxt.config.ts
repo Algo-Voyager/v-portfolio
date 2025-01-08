@@ -70,6 +70,13 @@ export default defineNuxtConfig({
     strategy: 'no_prefix',  // Changed since we only have one language
     vueI18n: './i18n.config.ts'  // Change this to string path instead of object
   },
+  runtimeConfig: {
+    public: {
+      serviceId: process.env.SERVICE_ID,
+      templateId: process.env.TEMPLATE_ID,
+      publicKey: process.env.PUBLIC_KEY
+    }
+  },
 
   compatibilityDate: '2025-01-08',
 });

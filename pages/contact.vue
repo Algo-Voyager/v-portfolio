@@ -1,28 +1,40 @@
-<script setup>
+<script setup lang="ts">
 import { ref } from 'vue'
+import { useRuntimeConfig } from '#app'
 import emailjs from '@emailjs/browser'
 
-const formRef = ref(null)
+// Get runtime config
+const runtimeConfig = useRuntimeConfig()
 
-// Access the environment variables:
-const serviceId = import.meta.env.VITE_SERVICE_ID
-const templateId = import.meta.env.VITE_TEMPLATE_ID
-const publicKey = import.meta.env.VITE_PUBLIC_KEY
+// Define formRef with proper typing
+const formRef = ref<HTMLFormElement | null>(null)
 
-const handleSubmit = (event) => {
-  event.preventDefault()
+const serviceId = runtimeConfig.public.serviceId
+const templateId = runtimeConfig.public.templateId
+const publicKey = runtimeConfig.public.publicKey
 
-  // Use EmailJS to send the form
-  emailjs.sendForm(serviceId, templateId, formRef.value, publicKey)
-    .then((result) => {
-      console.log('Success:', result.text)
-      alert('Your message has been sent successfully!')
-      formRef.value.reset()
-    })
-    .catch((error) => {
-      console.error('Error:', error)
-      alert('Oops! Something went wrong. Please try again.')
-    })
+const isLoading = ref(false)
+
+const handleSubmit = async () => {
+  if (!formRef.value) {
+    console.error('Form reference is null.')
+    alert('Form is not available.')
+    return
+  }
+
+  isLoading.value = true
+
+  try {
+    const result = await emailjs.sendForm(serviceId, templateId, formRef.value, publicKey)
+    console.log('Success:', result.text)
+    alert('Message sent successfully!')
+    formRef.value.reset()
+  } catch (error) {
+    console.error('Error sending email:', error)
+    alert('Oops! Something went wrong.')
+  } finally {
+    isLoading.value = false
+  }
 }
 </script>
 
@@ -46,7 +58,7 @@ const handleSubmit = (event) => {
             placeholder="Full name" 
             required 
             data-form-input
-          >
+          />
 
           <input
             type="email" 
@@ -55,7 +67,7 @@ const handleSubmit = (event) => {
             placeholder="Email address" 
             required
             data-form-input
-          >
+          />
         </div>
 
         <textarea 
@@ -64,10 +76,10 @@ const handleSubmit = (event) => {
           placeholder="Your Message" 
           required 
           data-form-input
-        />
+        ></textarea>
 
         <button class="form-btn" type="submit" data-form-btn>
-          <ion-icon name="paper-plane" />
+          <ion-icon name="paper-plane"></ion-icon>
           <span>Send Message</span>
         </button>
       </form>
