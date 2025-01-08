@@ -1,0 +1,43 @@
+{
+  "name": "v-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@7.9.0",
+  "scripts": {
+    "build": "nuxi build",
+    "dev": "nuxi dev",
+    "start": "node .output/server/index.mjs",
+    "lint": "eslint .",
+    "postinstall": "nuxi prepare",
+    "generate": "nuxi generate"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^3.12.1",
+    "@iconify-json/carbon": "^1.2.5",
+    "@iconify-json/twemoji": "^1.2.2",
+    "@nuxtjs/color-mode": "^3.5.2",
+    "@nuxtjs/tailwindcss": "^6.12.2",
+    "@pinia/nuxt": "^0.5.5",
+    "@vueuse/nuxt": "^12.3.0",
+    "eslint": "^9.17.0",
+    "nuxt": "^3.15.1",
+    "pinia": "^2.3.0",
+    "tailwindcss-dark-mode": "^1.1.7",
+    "typescript": "^5.7.2",
+    "vue-i18n": "^11.0.1"
+  },
+  "dependencies": {
+    "@egjs/vue3-flicking": "^4.12.0",
+    "@nuxtjs/i18n": "^9.1.1",
+    "@pinia-orm/nuxt": "^1.10.1",
+    "primeicons": "^7.0.0",
+    "primevue": "^4.2.5",
+    "vue-cookies": "^1.8.5"
+  },
+  "pnpm": {
+    "overrides": {
+      "glob": "^9.0.0",
+      "inflight": "^1.0.6"
+    }
+  }
+}
