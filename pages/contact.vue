@@ -1,7 +1,29 @@
 <script setup>
-useHead({
-  title: 'Contact',
-})
+import { ref } from 'vue'
+import emailjs from '@emailjs/browser'
+
+const formRef = ref(null)
+
+// Access the environment variables:
+const serviceId = import.meta.env.VITE_SERVICE_ID
+const templateId = import.meta.env.VITE_TEMPLATE_ID
+const publicKey = import.meta.env.VITE_PUBLIC_KEY
+
+const handleSubmit = (event) => {
+  event.preventDefault()
+
+  // Use EmailJS to send the form
+  emailjs.sendForm(serviceId, templateId, formRef.value, publicKey)
+    .then((result) => {
+      console.log('Success:', result.text)
+      alert('Your message has been sent successfully!')
+      formRef.value.reset()
+    })
+    .catch((error) => {
+      console.error('Error:', error)
+      alert('Oops! Something went wrong. Please try again.')
+    })
+}
 </script>
 
 <template>
@@ -13,23 +35,38 @@ useHead({
     </header>
 
     <section class="contact-form">
-      <h3 class="h3 form-title">
-        Contact Form
-      </h3>
+      <h3 class="h3 form-title">Contact Form</h3>
 
-      <form action="#" class="form" data-form>
+      <form ref="formRef" @submit.prevent="handleSubmit" class="form" data-form>
         <div class="input-wrapper">
-          <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+          <input 
+            type="text" 
+            name="fullname" 
+            class="form-input" 
+            placeholder="Full name" 
+            required 
+            data-form-input
+          >
 
           <input
-            type="email" name="email" class="form-input" placeholder="Email address" required
+            type="email" 
+            name="email" 
+            class="form-input" 
+            placeholder="Email address" 
+            required
             data-form-input
           >
         </div>
 
-        <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input />
+        <textarea 
+          name="message" 
+          class="form-input" 
+          placeholder="Your Message" 
+          required 
+          data-form-input
+        />
 
-        <button class="form-btn" type="submit" disabled data-form-btn>
+        <button class="form-btn" type="submit" data-form-btn>
           <ion-icon name="paper-plane" />
           <span>Send Message</span>
         </button>
