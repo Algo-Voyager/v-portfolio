@@ -8,7 +8,7 @@ export default defineI18nConfig(() => ({
             pageTitles: {
                 about: "About",
                 resume: "Resume",
-                portfolio: "Portfolio",
+                portfolio: "Projects",
                 blog: "Blog",
                 contact: "Contact"
             }

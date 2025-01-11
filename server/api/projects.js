@@ -1,102 +1,132 @@
-import { defineEventHandler } from 'h3'
+import { defineEventHandler } from 'h3';
 
 export default defineEventHandler(() => {
   return [
     {
       id: 1,
-      title: 'Finance',
+      title: 'Scalable Backend Application',
+      created_at: '10 January, 2025',
       category: {
         id: 1,
         title: {
-          en: 'Web Development',
-          tr: 'Web Geliştirme',
+          en: 'Backend Development',
+          tr: 'Backend Geliştirme',
         },
       },
       content: {
-        en: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-        tr: 'Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500\'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960\'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.',
+        en: 'Developed a microservices-based application using Docker and Docker Compose. The system comprises services for account management, catalog handling, order processing, and a GraphQL API gateway. Each service is containerized and connected to its respective database, ensuring modularity and scalability.',
+        tr: 'Docker ve Docker Compose kullanarak mikro hizmet tabanlı bir uygulama geliştirildi. Sistem, hesap yönetimi, katalog işlemleri, sipariş işlemleri ve bir GraphQL API geçidi için hizmetler içeriyor. Her hizmet modüler ve ölçeklenebilirlik sağlamak için kapsülenmiştir.',
       },
       image: '/images/project-1.jpg',
+      github_link: 'https://github.com/Algo-Voyager/scalable-backend-application',
     },
     {
       id: 2,
-      title: 'Orizon',
+      title: 'TSP-CWOA-SA',
+      created_at: '05 December, 2024',
       category: {
-        id: 1,
+        id: 2,
         title: {
-          en: 'Web Development',
-          tr: 'Web Geliştirme',
+          en: 'Algorithm Development',
+          tr: 'Algoritma Geliştirme',
         },
       },
       content: {
-        en: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-        tr: 'Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500\'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960\'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.',
+        en: 'Created a solver for the Traveling Salesman Problem utilizing Simulated Annealing, integrated with Streamlit for interactive visualization. The application provides a real-time animation of the TSP solution process, displaying both the current and optimal tours.',
+        tr: 'Simulated Annealing kullanarak Gezgin Satıcı Problemi için bir çözücü geliştirildi ve Streamlit ile etkileşimli görselleştirme entegre edildi. Uygulama, hem mevcut hem de optimal turlara görsellik sağlayan gerçek zamanlı bir animasyon sunar.',
       },
-      image: '/images/project-2.png',
+      image: '/images/tsp.png',
+      github_link: 'https://github.com/Algo-Voyager/TSP-CWOA-SA',
     },
     {
       id: 3,
-      title: 'Brawlhalla',
+      title: 'P2P Botnet Detection Using Ensemble Learning',
+      created_at: '15 November, 2024',
       category: {
-        id: 2,
+        id: 3,
         title: {
-          en: 'Application',
-          tr: 'Uygulama',
+          en: 'ML in Cybersecurity',
+          tr: 'Siber Güvenlik',
         },
       },
       content: {
-        en: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-        tr: 'Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500\'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960\'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.',
+        en: 'Engineered a system to detect peer-to-peer botnets through network traffic analysis. Employed machine learning models, including Decision Trees, Logistic Regression, and Random Forests, to identify malicious activities.',
+        tr: 'Ağ trafiği analizi yoluyla peer-to-peer botnetleri tespit etmek için bir sistem geliştirildi. Kötü niyetli faaliyetleri tespit etmek için Karar Ağaçları, Lojistik Regresyon ve Random Forests gibi makine öğrenme modelleri kullanıldı.',
       },
-      image: '/images/project-3.jpg',
+      image: '/images/p2p.png',
+      github_link: 'https://github.com/Algo-Voyager/P2P_Botnet_Detection_Ensemble_Learning',
     },
     {
       id: 4,
-      title: 'DSM.',
+      title: 'GoToDoApp',
+      created_at: '01 October, 2024',
       category: {
-        id: 3,
+        id: 1,
         title: {
-          en: 'Web Design',
-          tr: 'Web Tasarım',
+          en: 'Backend Development',
+          tr: 'Backend Geliştirme',
         },
       },
       content: {
-        en: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-        tr: 'Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500\'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960\'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.',
+        en: 'Built a simple Todo application using Go and MongoDB. Designed RESTful API endpoints for creating, retrieving, updating, and deleting tasks. Implemented a frontend interface to interact with the backend services.',
+        tr: 'Go ve MongoDB kullanarak basit bir Todo uygulaması geliştirildi. RESTful API uç noktaları tasarlandı ve arka uç hizmetleri ile etkileşim sağlayan bir ön yüz uygulaması uygulandı.',
       },
-      image: '/images/project-4.png',
+      image: '/images/gotodo.png',
+      github_link: 'https://github.com/Algo-Voyager/GoToDoApp',
     },
     {
       id: 5,
-      title: 'MetaSpark',
-      category: {
-        id: 3,
-        title: {
-          en: 'Web Design',
-          tr: 'Web Tasarım',
-        },
-      },
-      content: {
-        en: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-        tr: 'Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500\'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960\'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.',
-      },
-      image: '/images/project-5.png',
-    },
-    {
-      id: 6,
-      title: 'Fundo',
+      title: 'Flex-Shop',
+      created_at: '20 September, 2024',
       category: {
         id: 2,
         title: {
-          en: 'Application',
-          tr: 'Uygulama',
+          en: 'Web Application',
+          tr: 'Web Uygulaması',
         },
       },
       content: {
-        en: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-        tr: 'Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500\'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960\'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.',
+        en: 'Contributed to an e-commerce platform designed for buying and selling products. Developed features catering to both buyers and sellers, enhancing user experience.',
+        tr: 'Ürün alım satımı için tasarlanan bir e-ticaret platformuna katkı sağlandı. Kullanıcı deneyimini geliştiren alıcılar ve satıcılara yönelik özellikler geliştirildi.',
       },
-      image: '/images/project-6.png',
+      image: '/images/Shop-online.png',
+      github_link: 'https://github.com/Algo-Voyager/flex-shop',
     },
-  ]
-})
+    {
+      id: 6,
+      title: 'Netflix Episode Page',
+      created_at: '30 August, 2024',
+      category: {
+        id: 3,
+        title: {
+          en: 'UI/UX Design',
+          tr: 'UI/UX Tasarım',
+        },
+      },
+      content: {
+        en: 'Developed a Flutter-based application replicating the Netflix episode page interface. Focused on UI/UX design to closely mimic the original layout and functionality.',
+        tr: 'Flutter tabanlı bir uygulama geliştirildi ve Netflix bölüm sayfası arayüzünü taklit etti. Orijinal tasarım ve işlevselliği yakından yansıtmak için UI/UX tasarıma odaklanıldı.',
+      },
+      image: '/images/netflix.jpg',
+      github_link: 'https://github.com/Algo-Voyager/netflix-episode-page',
+    },
+    {
+      id: 7,
+      title: 'Text Viewer-Editor',
+      created_at: '15 July, 2024',
+      category: {
+        id: 1,
+        title: {
+          en: 'Desktop Application',
+          tr: 'Masaüstü Uygulama',
+        },
+      },
+      content: {
+        en: 'Created a native application for viewing and editing text files. Implemented features to open, edit, and save text documents within a user-friendly interface.',
+        tr: 'Metin dosyalarını görüntülemek ve düzenlemek için bir masaüstü uygulaması geliştirildi. Kullanıcı dostu bir arayüzde metin belgelerini açma, düzenleme ve kaydetme özellikleri eklendi.',
+      },
+      image: '/images/text_app.jpg',
+      github_link: 'https://github.com/Algo-Voyager/Text_Viewer-Editor',
+    }
+  ];
+});

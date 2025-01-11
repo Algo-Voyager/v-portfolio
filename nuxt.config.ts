@@ -30,7 +30,7 @@ export default defineNuxtConfig({
   ],
 
   build: {
-    transpile: ['primevue', 'pinia-orm'],
+    transpile: ['primevue', 'pinia-orm', 'vue-i18n'],
   },
 
   tailwindcss: {

@@ -1,7 +1,10 @@
 <script setup>
+import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import Flicking from '@egjs/vue3-flicking'
 import '@egjs/vue3-flicking/dist/flicking.css'
+import dayjs from 'dayjs'
+import 'dayjs/locale/tr' // Import Turkish locale if needed
 
 useHead({
   title: 'Portfolio',
@@ -39,6 +42,16 @@ function closeItem() {
   activeModal.value = false
   activeOverlay.value = false
 }
+
+function formatDate(dateStr) {
+  // Parse the date string
+  const parsedDate = dayjs(dateStr);
+
+  // Format the date as "DD MMM YYYY"
+  return parsedDate.format('DD MMM, YYYY');
+}
+
+
 </script>
 
 <template>
@@ -91,7 +104,12 @@ function closeItem() {
       </div>
 
       <ul class="project-list">
-        <li v-for="project in projectList" :key="project.id" :class="{ active: activeCategory === project.category.id || activeCategory === 0 }" class="project-item">
+        <li 
+          v-for="project in projectList" 
+          :key="project.id" 
+          :class="{ active: activeCategory === project.category.id || activeCategory === 0 }" 
+          class="project-item"
+        >
           <a class="cursor-pointer" @click="showItem(project.id)">
 
             <figure class="project-img">
@@ -99,7 +117,8 @@ function closeItem() {
                 <ion-icon name="eye-outline" />
               </div>
 
-              <img :src="project.image" :alt="project.title" loading="lazy">
+              <img class="project-image" :src="project.image" :alt="project.title" loading="lazy">
+
             </figure>
 
             <h3 class="project-title">{{ project.title }}</h3>
@@ -130,7 +149,12 @@ function closeItem() {
             </h4>
 
             <small class="flex items-center justify-start gap-2 text-gray-500">
-              <span>14 June, 2021</span> | <span>{{ locale === 'en' ? activeItem.category?.title?.en : activeItem.category?.title?.tr }}</span> | <NuxtLink to="#">View Project</NuxtLink>
+              <span>{{ formatDate(activeItem.created_at) }}</span> | 
+              <span>{{ locale === 'en' ? activeItem.category?.title?.en : activeItem.category?.title?.tr }}</span> | 
+              <NuxtLink :to="activeItem.github_link" target="_blank" rel="noopener">
+                View Project
+              </NuxtLink>
+
             </small>
 
             <p class="text-justify" v-html="locale === 'en' ? activeItem.content?.en : activeItem.content?.tr" />
@@ -140,3 +164,13 @@ function closeItem() {
     </section>
   </article>
 </template>
+
+<style>
+.project-img img {
+  width: 100%; /* Ensures the image takes up the full width of its container */
+  height: 200px; /* Set a fixed height or adjust as per your design */
+  object-fit: cover; /* Ensures the image scales properly without distortion */
+  border-radius: 8px; /* Optional: Adds rounded corners */
+  display: block; /* Prevents inline spacing issues */
+}
+</style>

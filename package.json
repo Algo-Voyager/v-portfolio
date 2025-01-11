@@ -33,6 +33,7 @@
     "@pinia-orm/nuxt": "^1.10.1",
     "@unhead/vue": "^1.11.15",
     "@vueuse/head": "^2.0.0",
+    "dayjs": "^1.11.13",
     "ionicons": "^7.4.0",
     "primeicons": "^7.0.0",
     "primevue": "^4.2.5",
