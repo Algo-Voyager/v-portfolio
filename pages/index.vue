@@ -65,31 +65,6 @@ const { data: services } = await useFetch('/api/services')
       </ul>
     </section>
 
-    <!-- testimonials -->
-
-    <section class="testimonials">
-      <h3 class="h3 testimonials-title">
-        Testimonials
-      </h3>
-
-      <ul class="testimonials-list has-scrollbar">
-        <li v-for="testimonial in testimonials" :key="testimonial.id" class="testimonials-item" @click="showTestimonial(testimonial.id)">
-          <div class="content-card">
-            <figure class="testimonials-avatar-box">
-              <img :src="testimonial.image" alt="Testimonial author" width="60">
-            </figure>
-
-            <h4 class="h4 testimonials-item-title">
-              {{ testimonial.title }}
-            </h4>
-
-            <div class="testimonials-text">
-              <p>{{ locale === 'en' ? testimonial.content?.en : testimonial.content?.tr }}</p>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </section>
 
     <!-- testimonials modal -->
 
@@ -124,50 +99,86 @@ const { data: services } = await useFetch('/api/services')
       </section>
     </div>
 
-    <!-- clients -->
+    <!-- tech stack -->
 
-    <section class="clients">
-      <h3 class="h3 clients-title">
-        Clients
+    <section class="tech-stack">
+      <h3 class="h3 tech-stack-title">
+        Tech Stack
       </h3>
 
-      <ul class="clients-list has-scrollbar">
-        <li class="clients-item">
-          <a href="#">
-            <img src="/images/logo-1-color.png" alt="client logo">
-          </a>
+      <ul class="tech-stack-list has-scrollbar">
+        <li class="tech-stack-item">
+          <img src="/images/aws.png" alt="AWS" class="tech-stack-logo">
         </li>
-
-        <li class="clients-item">
-          <a href="#">
-            <img src="/images/logo-2-color.png" alt="client logo">
-          </a>
+        <li class="tech-stack-item">
+          <img src="/images/cpp.png" alt="C++" class="tech-stack-logo">
         </li>
-
-        <li class="clients-item">
-          <a href="#">
-            <img src="/images/logo-3-color.png" alt="client logo">
-          </a>
+        <li class="tech-stack-item">
+          <img src="/images/django.png" alt="Django" class="tech-stack-logo">
         </li>
-
-        <li class="clients-item">
-          <a href="#">
-            <img src="/images/logo-4-color.png" alt="client logo">
-          </a>
+        <li class="tech-stack-item">
+          <img src="/images/docker.png" alt="Docker" class="tech-stack-logo">
         </li>
-
-        <li class="clients-item">
-          <a href="#">
-            <img src="/images/logo-5-color.png" alt="client logo">
-          </a>
+        <li class="tech-stack-item">
+          <img src="/images/git.png" alt="Git" class="tech-stack-logo">
         </li>
-
-        <li class="clients-item">
-          <a href="#">
-            <img src="/images/logo-6-color.png" alt="client logo">
-          </a>
+        <li class="tech-stack-item">
+          <img src="/images/golang.png" alt="Golang" class="tech-stack-logo">
+        </li>
+        <li class="tech-stack-item">
+          <img src="/images/js.png" alt="JavaScript" class="tech-stack-logo">
+        </li>
+        <li class="tech-stack-item">
+          <img src="/images/linux.png" alt="Linux" class="tech-stack-logo">
+        </li>
+        <li class="tech-stack-item">
+          <img src="/images/mongodb.png" alt="MongoDB" class="tech-stack-logo">
+        </li>
+        <li class="tech-stack-item">
+          <img src="/images/nodejs.png" alt="Node.js" class="tech-stack-logo">
+        </li>
+        <li class="tech-stack-item">
+          <img src="/images/python.png" alt="Python" class="tech-stack-logo">
+        </li>
+        <li class="tech-stack-item">
+          <img src="/images/redis.png" alt="Redis" class="tech-stack-logo">
+        </li>
+        <li class="tech-stack-item">
+          <img src="/images/sql.png" alt="SQL" class="tech-stack-logo">
+        </li>
+        <li class="tech-stack-item">
+          <img src="/images/ts.png" alt="TypeScript" class="tech-stack-logo">
         </li>
       </ul>
     </section>
   </article>
 </template>
+
+<style scoped>
+.tech-stack {
+  margin-top: 2rem;
+}
+
+.tech-stack-title {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.tech-stack-list {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding: 1rem 0;
+}
+
+.tech-stack-item {
+  flex: 0 0 auto;
+}
+
+.tech-stack-logo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+</style>
