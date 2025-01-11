@@ -79,6 +79,34 @@ function toggleMenu() {
 
         <li class="contact-item">
           <div class="icon-box">
+            <ion-icon name="code-slash-outline" />
+          </div>
+
+          <div class="contact-info">
+            <p class="contact-title">
+              LeetCode
+            </p>
+
+            <a href="https://leetcode.com/vukoga/" class="contact-link" target="_blank">vukoga</a>
+          </div>
+        </li>
+
+        <li class="contact-item">
+          <div class="icon-box">
+            <ion-icon name="barbell-outline" />
+          </div>
+
+          <div class="contact-info">
+            <p class="contact-title">
+              Codeforces
+            </p>
+
+            <a href="https://codeforces.com/profile/_algo_voyager" class="contact-link" target="_blank">_algo_voyager</a>
+          </div>
+        </li>
+
+        <!-- <li class="contact-item">
+          <div class="icon-box">
             <ion-icon name="location-outline" />
           </div>
 
@@ -89,12 +117,12 @@ function toggleMenu() {
 
             <address>India</address>
           </div>
-        </li>
+        </li> -->
       </ul>
 
       <div class="separator" />
 
-      <ul class="social-list">
+      <!-- <ul class="social-list">
         <li class="social-item">
           <a href="https://www.twitter.com/iampkumar02" class="social-link" target="_blank">
             <ion-icon name="logo-twitter" />
@@ -107,7 +135,7 @@ function toggleMenu() {
           </a>
         </li>
         <LangSwitcher2 />
-      </ul>
+      </ul> -->
     </div>
   </aside>
 </template>

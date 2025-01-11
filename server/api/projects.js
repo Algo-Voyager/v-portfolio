@@ -25,7 +25,7 @@ export default defineEventHandler(() => {
       title: 'TSP-CWOA-SA',
       created_at: '05 December, 2024',
       category: {
-        id: 2,
+        id: 1,
         title: {
           en: 'Algorithm Development',
           tr: 'Algoritma Geliştirme',
@@ -43,7 +43,7 @@ export default defineEventHandler(() => {
       title: 'P2P Botnet Detection Using Ensemble Learning',
       created_at: '15 November, 2024',
       category: {
-        id: 3,
+        id: 1,
         title: {
           en: 'ML in Cybersecurity',
           tr: 'Siber Güvenlik',
@@ -79,7 +79,7 @@ export default defineEventHandler(() => {
       title: 'Flex-Shop',
       created_at: '20 September, 2024',
       category: {
-        id: 2,
+        id: 1,
         title: {
           en: 'Web Application',
           tr: 'Web Uygulaması',
@@ -112,10 +112,28 @@ export default defineEventHandler(() => {
     },
     {
       id: 7,
+      title: 'Local-Torrent',
+      created_at: '01 January, 2022',
+      category: {
+        id: 2,
+        title: {
+          en: 'Peer-to-Peer Application',
+          tr: 'Eşler Arası Uygulama',
+        },
+      },
+      content: {
+        en: 'Developed a peer-to-peer desktop application enabling group chats, private messaging, and file sharing among users. Integrated socket programming and P2P protocols to achieve low-latency communication.',
+        tr: 'Kullanıcılar arasında grup sohbeti, özel mesajlaşma ve dosya paylaşımını sağlayan eşler arası bir masaüstü uygulaması geliştirildi. Düşük gecikmeli iletişim sağlamak için soket programlama ve P2P protokolleri entegre edildi.',
+      },
+      image: '/images/torrent.png',
+      github_link: 'https://github.com/Algo-Voyager/Local-Torrent',
+    },
+    {
+      id: 8,
       title: 'Text Viewer-Editor',
       created_at: '15 July, 2024',
       category: {
-        id: 1,
+        id: 2,
         title: {
           en: 'Desktop Application',
           tr: 'Masaüstü Uygulama',
@@ -127,6 +145,7 @@ export default defineEventHandler(() => {
       },
       image: '/images/text_app.jpg',
       github_link: 'https://github.com/Algo-Voyager/Text_Viewer-Editor',
-    }
+    },
+    
   ];
 });
