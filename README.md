@@ -26,37 +26,59 @@
 ### Prerequisites
 
 - **Node.js**: >= 18.20.5
+  - **Tip**: Before starting the project, ensure you're using Node.js version 18 or higher. You can switch to the required version using [nvm](https://github.com/nvm-sh/nvm) with the following command:
+    ```bash
+    nvm use 18
+    ```
 - **PNPM**: >= 9.15.3
 
 ### Installation
 
-1. Clone the repository:
+1. **Clone the repository:**
+   
    ```bash
    git clone https://github.com/yourusername/v-portfolio.git
    cd v-portfolio
    ```
 
-2. Install dependencies:
+2. **Select Node.js version 18 or higher (if not already selected):**
+   
+   ```bash
+   nvm use 18
+   ```
+
+3. **Install dependencies:**
+   
    ```bash
    pnpm install
    ```
 
-3. Start the development server:
+   > **Note:** If you need to install any additional packages, use the following command:
+   >
+   > ```bash
+   > pnpm add <package-name>
+   > ```
+
+4. **Start the development server:**
+   
    ```bash
    pnpm dev
    ```
 
-4. Build for production:
+5. **Build for production:**
+   
    ```bash
    pnpm build
    ```
 
-5. Run the production server:
+6. **Run the production server:**
+   
    ```bash
    pnpm start
    ```
 
-6. Generate a static site:
+7. **Generate a static site:**
+   
    ```bash
    pnpm generate
    ```
