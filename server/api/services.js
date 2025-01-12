@@ -4,20 +4,20 @@ export default defineEventHandler(() => {
   return [
     {
       id: 1,
-      title: 'Laravel',
+      title: 'Problem Solving',
       description: {
-        en: 'I build modern and advanced websites and applications with Laravel, the PHP framework.',
-        tr: 'PHP frameworkü olan Laravel ile modern ve gelişmiş web siteleri ve uygulamaları yapıyorum.',
+        en: 'I solve complex problems and develop high-performance, scalable server-side applications.',
+        tr: 'Karmaşık problemleri analiz ederek yönetilebilir parçalara ayırıyor ve verimli, yenilikçi çözümler sunuyorum.',
       },
       icon: 'logo-laravel',
       image: null,
     },
     {
       id: 2,
-      title: 'Vue JS',
+      title: 'Golang',
       description: {
-        en: 'I use VueJS, a modern JavaScript framework, while making dynamic and static websites and applications.',
-        tr: 'Dinamik ve statik web site ve uygulamaları yaparken modern JavaScript framework olan VueJS kullanıyorum.',
+        en: 'I utilize Golang, a powerful and efficient programming language, to build scalable and robust backend systems and services.',
+        tr: 'Güçlü ve verimli bir programlama dili olan Golang ile ölçeklenebilir ve sağlam backend sistemleri ve hizmetleri oluşturuyorum.',
       },
       icon: 'logo-vue',
       image: null,
