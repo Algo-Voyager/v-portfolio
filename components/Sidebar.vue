@@ -21,7 +21,7 @@ function toggleMenu() {
         </h1>
 
         <p class="title text-center xl:block flex items-center justify-center gap-1">
-          <span class="xl:after:content-[''] after:content-[',']">Software Engineer</span>
+          <span class="xl:after:content-['']">Software Engineer</span>
         </p>
       </div>
 
