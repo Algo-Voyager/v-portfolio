@@ -30,7 +30,7 @@ useHead({
             Indian Institute of Information Technology, Gwalior
           </h4>
 
-          <span>2020 — 2025 (Expected)</span>
+          <span>2020 — 2025</span>
 
           <p class="timeline-text">
             Pursuing a dual degree program (B.Tech in Information Technology + Masters). Completed coursework in Computer Networks, Database Management Systems, OOPS, and Operating Systems.
@@ -59,9 +59,13 @@ useHead({
 
           <span>April 2024 — July 2024</span>
 
-          <p class="timeline-text">
-            Developed a web application security scanning tool using Node.js, MySQL, and MongoDB. Integrated OWASP ZAP via Docker and implemented a scheduling system for recurring and one-time scans.
-          </p>
+          <ul class="timeline-text">
+            <li><span style="color: #FFA500; display: inline-block; margin-right: 5px;">•</span> Developed a web application security scanning tool using Node.js, MySQL, and MongoDB.</li>
+            <li><span style="color: #FFA500; display: inline-block; margin-right: 5px;">•</span> Integrated OWASP ZAP via Docker for security scanning of authenticated and non-authenticated environments.</li>
+            <li><span style="color: #FFA500; display: inline-block; margin-right: 5px;">•</span> Designed a scheduling system for recurring and one-time security scans, improving efficiency by 30%.</li>
+            <li><span style="color: #FFA500; display: inline-block; margin-right: 5px;">•</span> Created Docker-in-Docker solutions for seamless integration and environment setup, reducing setup time significantly.</li>
+            <li><span style="color: #FFA500; display: inline-block; margin-right: 5px;">•</span> Contributed to team productivity enhancements by improving developer onboarding processes.</li>
+          </ul>
         </li>
 
         <li class="timeline-item">
@@ -71,85 +75,15 @@ useHead({
 
           <span>February 2024 — March 2024</span>
 
-          <p class="timeline-text">
-            Led a project on real-time communication through video conferencing and chat. Reduced latency by 20% using WebRTC for P2P video calls and decreased server load by 30%.
-          </p>
+          <ul class="timeline-text">
+            <li><span style="color: #FFA500; display: inline-block; margin-right: 5px;">•</span> Led a project focused on real-time communication through video conferencing and chat platforms.</li>
+            <li><span style="color: #FFA500; display: inline-block; margin-right: 5px;">•</span> Reduced latency by 20% using WebRTC for peer-to-peer video calls, enabling smoother user interactions.</li>
+            <li><span style="color: #FFA500; display: inline-block; margin-right: 5px;">•</span> Optimized server load by 30% by implementing efficient WebRTC signaling and connection handling mechanisms.</li>
+            <li><span style="color: #FFA500; display: inline-block; margin-right: 5px;">•</span> Developed a robust architecture supporting scalable and reliable video communication for users.</li>
+            <li><span style="color: #FFA500; display: inline-block; margin-right: 5px;">•</span> Utilized Agile methodologies to manage tasks, ensuring timely delivery of project milestones.</li>
+          </ul>
         </li>
       </ol>
-    </section>
-
-    <!-- Skills Section -->
-    <section class="skill">
-      <h3 class="h3 skills-title">
-        My Skills
-      </h3>
-
-      <ul class="skills-list content-card">
-        <li class="skills-item">
-          <div class="title-wrapper">
-            <h5 class="h5">
-              C++
-            </h5>
-            <data value="90">90%</data>
-          </div>
-
-          <div class="skill-progress-bg">
-            <div class="skill-progress-fill" style="width: 90%;" />
-          </div>
-        </li>
-
-        <li class="skills-item">
-          <div class="title-wrapper">
-            <h5 class="h5">
-              Python
-            </h5>
-            <data value="85">85%</data>
-          </div>
-
-          <div class="skill-progress-bg">
-            <div class="skill-progress-fill" style="width: 85%;" />
-          </div>
-        </li>
-
-        <li class="skills-item">
-          <div class="title-wrapper">
-            <h5 class="h5">
-              JavaScript
-            </h5>
-            <data value="75">75%</data>
-          </div>
-
-          <div class="skill-progress-bg">
-            <div class="skill-progress-fill" style="width: 75%;" />
-          </div>
-        </li>
-
-        <li class="skills-item">
-          <div class="title-wrapper">
-            <h5 class="h5">
-              Docker
-            </h5>
-            <data value="80">80%</data>
-          </div>
-
-          <div class="skill-progress-bg">
-            <div class="skill-progress-fill" style="width: 80%;" />
-          </div>
-        </li>
-
-        <li class="skills-item">
-          <div class="title-wrapper">
-            <h5 class="h5">
-              AWS
-            </h5>
-            <data value="70">70%</data>
-          </div>
-
-          <div class="skill-progress-bg">
-            <div class="skill-progress-fill" style="width: 70%;" />
-          </div>
-        </li>
-      </ul>
     </section>
 
     <!-- Download Resume Button -->
