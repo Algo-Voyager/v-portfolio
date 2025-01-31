@@ -60,10 +60,9 @@ useHead({
           <span>April 2024 — July 2024</span>
 
           <ul class="timeline-text">
-            <li><span style="color: #FFA500; display: inline-block; margin-right: 5px;">•</span> Developed a web application security scanning tool using Node.js, MySQL, and MongoDB.</li>
-            <li><span style="color: #FFA500; display: inline-block; margin-right: 5px;">•</span> Integrated OWASP ZAP via Docker for security scanning of authenticated and non-authenticated environments.</li>
-            <li><span style="color: #FFA500; display: inline-block; margin-right: 5px;">•</span> Designed a scheduling system for recurring and one-time security scans, improving efficiency by 30%.</li>
-            <li><span style="color: #FFA500; display: inline-block; margin-right: 5px;">•</span> Created Docker-in-Docker solutions for seamless integration and environment setup, reducing setup time significantly.</li>
+            <li><span style="color: #FFA500; display: inline-block; margin-right: 5px;">•</span> Designed a web application security scanning tool using Node.js, MySQL, and MongoDB, managing 12+ APIs.</li>
+            <li><span style="color: #FFA500; display: inline-block; margin-right: 5px;">•</span> Optimized database performance by 60% and reduced vulnerabilities by 35% through connection pooling.</li>
+            <li><span style="color: #FFA500; display: inline-block; margin-right: 5px;">•</span> Created solutions for seamless integration and environment setup, reducing setup time significantly.</li>
             <li><span style="color: #FFA500; display: inline-block; margin-right: 5px;">•</span> Contributed to team productivity enhancements by improving developer onboarding processes.</li>
           </ul>
         </li>
