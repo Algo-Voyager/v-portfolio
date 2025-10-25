@@ -47,6 +47,11 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       failOnError: false,
+    },
+    routeRules: {
+      '/**': { 
+        swr: true 
+      }
     }
   },
 
@@ -62,13 +67,16 @@ export default defineNuxtConfig({
   i18n: {
     locales: [
       { code: 'en', file: 'en.json' },
-      // { code: 'tr', file: 'tr.json' },
+      { code: 'tr', file: 'tr.json' },
     ],
     defaultLocale: 'en',
     lazy: true,
     langDir: 'locales/',
-    strategy: 'no_prefix',  // Changed since we only have one language
-    vueI18n: './i18n.config.ts'  // Change this to string path instead of object
+    strategy: 'no_prefix',
+    vueI18n: './i18n.config.ts',
+    bundle: {
+      optimizeTranslationDirective: false
+    }
   },
   runtimeConfig: {
     public: {

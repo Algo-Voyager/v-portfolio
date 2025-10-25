@@ -15,8 +15,8 @@ const { locale } = useI18n({ useScope: 'global' })
 <template>
   <li class="service-item">
     <div class="service-icon-box">
-      <img v-if="service.image !== null && service.icon !== ''" :src="service.image" alt="mobile app icon" class="w-40">
-      <ion-icon v-else :name="service.icon" class="text-ranko-500 text-[3rem] mx-auto" style="width: 40px" />
+      <img v-if="service.image !== null" :src="service.image" alt="service icon" class="w-40">
+      <ion-icon v-else-if="service.icon" :name="service.icon" class="text-[#ffdb70]" style="font-size: 40px;" />
     </div>
 
     <div class="service-content-box">
@@ -24,8 +24,7 @@ const { locale } = useI18n({ useScope: 'global' })
         {{ service.title }}
       </h4>
 
-      <p class="service-item-text">
-        {{ locale === 'en' ? service.description?.en : service.description?.tr }}
+      <p class="service-item-text" v-html="locale === 'en' ? service.description?.en : service.description?.tr">
       </p>
     </div>
   </li>

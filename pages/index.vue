@@ -45,11 +45,15 @@ const { data: services } = await useFetch('/api/services')
 
     <section class="about-text">
       <p>
-        I am Prashant Kumar, a passionate Software Engineer and Web Developer from India. I specialize in building scalable, efficient, and user-friendly web applications. With a strong foundation in modern web technologies and a problem-solving mindset, I enjoy turning complex requirements into elegant solutions.
+        I am Prashant Kumar, a Software Engineer currently working at Lucidity, specializing in cloud infrastructure optimization and multi-cloud solutions. I hold a dual degree with a major in B.Tech Information Technology from IIIT Gwalior. With expertise in Python, Java, JavaScript, TypeScript, Go, and C++, I build scalable, efficient solutions that solve complex technical challenges.
       </p>
 
       <p>
-        My experience includes developing distributed backend systems, video conferencing tools, and security scanning solutions. I am dedicated to continuously learning and improving my skills to stay on the cutting edge of the tech industry.
+        My experience spans cloud platforms (AWS, Azure, GCP), backend development with microservices, and full-stack web applications. At Lucidity, I've improved multi-cloud visibility by 40%, reduced audit errors by 60%, and achieved 100% accuracy in Azure ASR detection. I'm also an active competitive programmer with a LeetCode rating of 1883 (Knight) and Codeforces Specialist rank, having solved 700+ problems across platforms.
+      </p>
+
+      <p>
+        I'm passionate about building high-performance systems, optimizing database queries, and contributing to open-source projects. When not coding, I enjoy tackling algorithmic challenges and learning new technologies.
       </p>
     </section>
 
@@ -108,10 +112,22 @@ const { data: services } = await useFetch('/api/services')
 
       <ul class="tech-stack-list has-scrollbar">
         <li class="tech-stack-item">
-          <img src="/images/aws.png" alt="AWS" class="tech-stack-logo">
+          <img src="/images/python.png" alt="Python" class="tech-stack-logo">
+        </li>
+        <li class="tech-stack-item">
+          <img src="/images/js.png" alt="JavaScript" class="tech-stack-logo">
+        </li>
+        <li class="tech-stack-item">
+          <img src="/images/ts.png" alt="TypeScript" class="tech-stack-logo">
+        </li>
+        <li class="tech-stack-item">
+          <img src="/images/golang.png" alt="Go" class="tech-stack-logo">
         </li>
         <li class="tech-stack-item">
           <img src="/images/cpp.png" alt="C++" class="tech-stack-logo">
+        </li>
+        <li class="tech-stack-item">
+          <img src="/images/nodejs.png" alt="Node.js" class="tech-stack-logo">
         </li>
         <li class="tech-stack-item">
           <img src="/images/django.png" alt="Django" class="tech-stack-logo">
@@ -120,36 +136,27 @@ const { data: services } = await useFetch('/api/services')
           <img src="/images/docker.png" alt="Docker" class="tech-stack-logo">
         </li>
         <li class="tech-stack-item">
+          <img src="/images/aws.png" alt="AWS" class="tech-stack-logo">
+        </li>
+        <li class="tech-stack-item">
           <img src="/images/git.png" alt="Git" class="tech-stack-logo">
-        </li>
-        <li class="tech-stack-item">
-          <img src="/images/golang.png" alt="Golang" class="tech-stack-logo">
-        </li>
-        <li class="tech-stack-item">
-          <img src="/images/js.png" alt="JavaScript" class="tech-stack-logo">
         </li>
         <li class="tech-stack-item">
           <img src="/images/linux.png" alt="Linux" class="tech-stack-logo">
         </li>
         <li class="tech-stack-item">
+          <img src="/images/sql.png" alt="PostgreSQL/MySQL" class="tech-stack-logo">
+        </li>
+        <li class="tech-stack-item">
           <img src="/images/mongodb.png" alt="MongoDB" class="tech-stack-logo">
-        </li>
-        <li class="tech-stack-item">
-          <img src="/images/nodejs.png" alt="Node.js" class="tech-stack-logo">
-        </li>
-        <li class="tech-stack-item">
-          <img src="/images/python.png" alt="Python" class="tech-stack-logo">
         </li>
         <li class="tech-stack-item">
           <img src="/images/redis.png" alt="Redis" class="tech-stack-logo">
         </li>
-        <li class="tech-stack-item">
-          <img src="/images/sql.png" alt="SQL" class="tech-stack-logo">
-        </li>
-        <li class="tech-stack-item">
-          <img src="/images/ts.png" alt="TypeScript" class="tech-stack-logo">
-        </li>
       </ul>
+      <p class="tech-stack-note" style="margin-top: 1rem; font-size: 0.875rem; color: #999;">
+        Also experienced with: Kubernetes, Kafka, Azure, GCP, React, Next.js, Unit Testing
+      </p>
     </section>
   </article>
 </template>

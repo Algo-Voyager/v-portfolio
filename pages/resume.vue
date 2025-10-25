@@ -33,7 +33,7 @@ useHead({
           <span>2020 — 2025</span>
 
           <p class="timeline-text">
-            Pursuing a dual degree program (B.Tech in Information Technology + Masters). Completed coursework in Computer Networks, Database Management Systems, OOPS, and Operating Systems.
+            Dual Degree (B.Tech + Masters) majoring in Information Technology. Coursework included Computer Networks, Database Management Systems, Object-Oriented Programming, and Operating Systems.
           </p>
         </li>
       </ol>
@@ -54,6 +54,21 @@ useHead({
       <ol class="timeline-list">
         <li class="timeline-item">
           <h4 class="h4 timeline-item-title">
+            Software Developer Intern at Lucidity
+          </h4>
+
+          <span>March 2025 — Present</span>
+
+          <ul class="timeline-text">
+            <li><span style="color: #FFA500; display: inline-block; margin-right: 5px;">•</span> Built an Azure disk v1→v2 upgrade checker with CPL API, updated DB rules, and cut audit time by 60%.</li>
+            <li><span style="color: #FFA500; display: inline-block; margin-right: 5px;">•</span> Made Azure ASR detection 100% accurate by switching to Recovery Services and Compute APIs.</li>
+            <li><span style="color: #FFA500; display: inline-block; margin-right: 5px;">•</span> Implemented multi-cloud discovery for EKS, AKS, Databricks, and ROSA across AWS, Azure, and GCP, added pagination and least-privilege IAM, improving visibility by 40% and AKS tracking to 99.9%.</li>
+            <li><span style="color: #FFA500; display: inline-block; margin-right: 5px;">•</span> Reduced AWS audit "Unknown" errors by 40% across 6k+ VMs by fixing SSM, IAM, and API throttling; added spanned-volume detection (Windows Dynamic Disks, LVM) to block unsupported disks in prod.</li>
+          </ul>
+        </li>
+
+        <li class="timeline-item">
+          <h4 class="h4 timeline-item-title">
             Software Engineer Intern at Secure Blink
           </h4>
 
@@ -61,26 +76,87 @@ useHead({
 
           <ul class="timeline-text">
             <li><span style="color: #FFA500; display: inline-block; margin-right: 5px;">•</span> Designed a web application security scanning tool using Node.js, MySQL, and MongoDB, managing 12+ APIs.</li>
-            <li><span style="color: #FFA500; display: inline-block; margin-right: 5px;">•</span> Optimized database performance by 60% and reduced vulnerabilities by 35% through connection pooling.</li>
-            <li><span style="color: #FFA500; display: inline-block; margin-right: 5px;">•</span> Created solutions for seamless integration and environment setup, reducing setup time significantly.</li>
-            <li><span style="color: #FFA500; display: inline-block; margin-right: 5px;">•</span> Contributed to team productivity enhancements by improving developer onboarding processes.</li>
+            <li><span style="color: #FFA500; display: inline-block; margin-right: 5px;">•</span> Integrated OWASP ZAP via Docker for authenticated and non-authenticated security scanning.</li>
+            <li><span style="color: #FFA500; display: inline-block; margin-right: 5px;">•</span> Developed a Docker-in-Docker solution that cut setup time by 30% and boosted team productivity.</li>
           </ul>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Coding Platforms Section -->
+    <section class="timeline">
+      <div class="title-wrapper">
+        <div class="icon-box">
+          <ion-icon name="code-slash-outline" />
+        </div>
+
+        <h3 class="h3">
+          Coding Platforms
+        </h3>
+      </div>
+
+      <ol class="timeline-list">
+        <li class="timeline-item">
+          <h4 class="h4 timeline-item-title">
+            <a href="https://leetcode.com/vukoga" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">
+              LeetCode - vukoga
+            </a>
+          </h4>
+
+          <p class="timeline-text">
+            Achieved a maximum rating of 1883 (Knight), solving over 300 problems.
+          </p>
         </li>
 
         <li class="timeline-item">
           <h4 class="h4 timeline-item-title">
-            Python Developer Intern at INeuron.ai
+            <a href="https://codeforces.com/profile/_algo_voyager" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">
+              Codeforces - _algo_voyager
+            </a>
           </h4>
 
-          <span>February 2024 — March 2024</span>
+          <p class="timeline-text">
+            Attained Specialist rank with a peak rating of 1448.
+          </p>
+        </li>
+      </ol>
+    </section>
 
-          <ul class="timeline-text">
-            <li><span style="color: #FFA500; display: inline-block; margin-right: 5px;">•</span> Led a project focused on real-time communication through video conferencing and chat platforms.</li>
-            <li><span style="color: #FFA500; display: inline-block; margin-right: 5px;">•</span> Reduced latency by 20% using WebRTC for peer-to-peer video calls, enabling smoother user interactions.</li>
-            <li><span style="color: #FFA500; display: inline-block; margin-right: 5px;">•</span> Optimized server load by 30% by implementing efficient WebRTC signaling and connection handling mechanisms.</li>
-            <li><span style="color: #FFA500; display: inline-block; margin-right: 5px;">•</span> Developed a robust architecture supporting scalable and reliable video communication for users.</li>
-            <li><span style="color: #FFA500; display: inline-block; margin-right: 5px;">•</span> Utilized Agile methodologies to manage tasks, ensuring timely delivery of project milestones.</li>
-          </ul>
+    <!-- Achievements Section -->
+    <section class="timeline">
+      <div class="title-wrapper">
+        <div class="icon-box">
+          <ion-icon name="trophy-outline" />
+        </div>
+
+        <h3 class="h3">
+          Achievements
+        </h3>
+      </div>
+
+      <ol class="timeline-list">
+        <li class="timeline-item">
+          <p class="timeline-text">
+            <span style="color: #FFA500; display: inline-block; margin-right: 5px;">•</span> Secured 380th position in the Codeforces Round 995
+          </p>
+        </li>
+
+        <li class="timeline-item">
+          <p class="timeline-text">
+            <span style="color: #FFA500; display: inline-block; margin-right: 5px;">•</span> Attained 154th rank in the LeetCode Weekly Contest 431
+          </p>
+        </li>
+
+        <li class="timeline-item">
+          <p class="timeline-text">
+            <span style="color: #FFA500; display: inline-block; margin-right: 5px;">•</span> Solved 700+ competitive programming problems across various platforms
+          </p>
+        </li>
+
+        <li class="timeline-item">
+          <p class="timeline-text">
+            <span style="color: #FFA500; display: inline-block; margin-right: 5px;">•</span> Contributed to open-source repositories, including GNOME Settings and Dino XMPP Client
+          </p>
         </li>
       </ol>
     </section>

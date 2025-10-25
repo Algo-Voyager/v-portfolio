@@ -4,7 +4,8 @@
     "pageTitles": {
         "about": "Hakkımda",
         "resume": "Özgeçmiş",
-        "myProjects": "Portfolyo",
+        "portfolio": "Portfolyo",
+        "myProjects": "Projelerim",
         "blog": "Blog",
         "contact": "İletişim"
     }

@@ -4,6 +4,24 @@ export default defineEventHandler(() => {
   return [
     {
       id: 1,
+      title: 'SSC Guru Talks',
+      created_at: '15 January, 2025',
+      category: {
+        id: 1,
+        title: {
+          en: 'Web Development',
+          tr: 'Web Geliştirme',
+        },
+      },
+      content: {
+        en: 'Built a bilingual (English/Hindi) exam preparation platform using Next.js 15 and PostgreSQL. Serving 196K+ requests/week with 4K users, achieving 7.5 pages/visit and 86.8% internal navigation. Implemented 3-layer caching (React cache, Next.js ISR, tag invalidation) and database tuning with 15+ indexes, targeting 93% TTFB reduction (2000→150ms) and 95%+ cache hit rate. Used Cloudflare Analytics to achieve 75% query-time reduction (200→50ms).',
+        tr: 'Next.js 15 ve PostgreSQL kullanarak iki dilli (İngilizce/Hintçe) sınav hazırlık platformu oluşturuldu. Haftada 196K+ istek ve 4K kullanıcıya hizmet vererek, ziyaret başına 7.5 sayfa ve %86.8 dahili gezinme elde edildi. 3 katmanlı önbellekleme (React cache, Next.js ISR, tag invalidation) ve 15+ indeks ile veritabanı ayarlaması uygulanarak %93 TTFB azalması (2000→150ms) ve %95+ önbellek isabet oranı hedeflendi. Cloudflare Analytics kullanılarak %75 sorgu süresi azalması (200→50ms) elde edildi.',
+      },
+      image: '/images/ssc-guru-talks-logo.jpg',
+      github_link: 'https://sscgurutalks.com',
+    },
+    {
+      id: 2,
       title: 'Scalable Backend Application',
       created_at: '10 January, 2025',
       category: {
@@ -21,7 +39,7 @@ export default defineEventHandler(() => {
       github_link: 'https://github.com/Algo-Voyager/scalable-backend-application',
     },
     {
-      id: 2,
+      id: 3,
       title: 'TSP-CWOA-SA',
       created_at: '05 December, 2024',
       category: {
@@ -39,7 +57,7 @@ export default defineEventHandler(() => {
       github_link: 'https://github.com/Algo-Voyager/TSP-CWOA-SA',
     },
     {
-      id: 3,
+      id: 4,
       title: 'P2P Botnet Detection Using Ensemble Learning',
       created_at: '15 November, 2024',
       category: {
@@ -57,7 +75,7 @@ export default defineEventHandler(() => {
       github_link: 'https://github.com/Algo-Voyager/P2P_Botnet_Detection_Ensemble_Learning',
     },
     {
-      id: 4,
+      id: 5,
       title: 'GoToDoApp',
       created_at: '01 October, 2024',
       category: {
@@ -75,7 +93,7 @@ export default defineEventHandler(() => {
       github_link: 'https://github.com/Algo-Voyager/GoToDoApp',
     },
     {
-      id: 5,
+      id: 6,
       title: 'Flex-Shop',
       created_at: '20 September, 2024',
       category: {
@@ -93,7 +111,7 @@ export default defineEventHandler(() => {
       github_link: 'https://github.com/Algo-Voyager/flex-shop',
     },
     {
-      id: 6,
+      id: 7,
       title: 'Netflix Episode Page',
       created_at: '30 August, 2024',
       category: {
@@ -111,7 +129,7 @@ export default defineEventHandler(() => {
       github_link: 'https://github.com/Algo-Voyager/netflix-episode-page',
     },
     {
-      id: 7,
+      id: 8,
       title: 'Local-Torrent',
       created_at: '01 January, 2022',
       category: {
@@ -129,7 +147,7 @@ export default defineEventHandler(() => {
       github_link: 'https://github.com/Algo-Voyager/Local-Torrent',
     },
     {
-      id: 8,
+      id: 9,
       title: 'Text Viewer-Editor',
       created_at: '15 July, 2024',
       category: {

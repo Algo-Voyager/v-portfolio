@@ -11,8 +11,8 @@ function toggleMenu() {
 <template>
   <aside class="sidebar" :class="{ active: isOpen }">
     <div class="sidebar-info">
-      <figure class="avatar-box">
-        <img src="/images/my-avatar.png" alt="Prashant Kumar" width="80">
+      <figure class="avatar-box" style="padding: 15px;">
+        <img src="/images/my_photo.png" alt="Prashant Kumar" width="80">
       </figure>
 
       <div class="info-content">
