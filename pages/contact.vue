@@ -15,23 +15,25 @@ const publicKey = runtimeConfig.public.publicKey
 
 const isLoading = ref(false)
 
+const successMessage = ref('')
+const errorMessage = ref('')
+
 const handleSubmit = async () => {
   if (!formRef.value) {
-    console.error('Form reference is null.')
-    alert('Form is not available.')
+    errorMessage.value = 'Form is not available. Please try again.'
     return
   }
 
   isLoading.value = true
+  successMessage.value = ''
+  errorMessage.value = ''
 
   try {
-    const result = await emailjs.sendForm(serviceId, templateId, formRef.value, publicKey)
-    console.log('Success:', result.text)
-    alert('Message sent successfully!')
+    await emailjs.sendForm(serviceId, templateId, formRef.value, publicKey)
+    successMessage.value = 'Message sent successfully! I will get back to you soon.'
     formRef.value.reset()
   } catch (error) {
-    console.error('Error sending email:', error)
-    alert('Oops! Something went wrong.')
+    errorMessage.value = 'Oops! Something went wrong. Please try again or contact me directly via email.'
   } finally {
     isLoading.value = false
   }
@@ -48,6 +50,14 @@ const handleSubmit = async () => {
 
     <section class="contact-form">
       <h3 class="h3 form-title">Contact Form</h3>
+
+      <div v-if="successMessage" class="mb-4 p-4 bg-green-500 bg-opacity-20 border border-green-500 rounded text-green-400">
+        {{ successMessage }}
+      </div>
+
+      <div v-if="errorMessage" class="mb-4 p-4 bg-red-500 bg-opacity-20 border border-red-500 rounded text-red-400">
+        {{ errorMessage }}
+      </div>
 
       <form ref="formRef" @submit.prevent="handleSubmit" class="form" data-form>
         <div class="input-wrapper">
@@ -78,9 +88,10 @@ const handleSubmit = async () => {
           data-form-input
         ></textarea>
 
-        <button class="form-btn" type="submit" data-form-btn>
-          <ion-icon name="paper-plane"></ion-icon>
-          <span>Send Message</span>
+        <button class="form-btn" type="submit" :disabled="isLoading" data-form-btn>
+          <ion-icon v-if="!isLoading" name="paper-plane"></ion-icon>
+          <ion-icon v-else name="hourglass-outline" class="animate-pulse"></ion-icon>
+          <span>{{ isLoading ? 'Sending...' : 'Send Message' }}</span>
         </button>
       </form>
     </section>

@@ -3,22 +3,22 @@
 </script>
 
 <template>
-  <nav class="navbar">
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
     <ul class="navbar-list">
       <li class="navbar-item">
-        <NuxtLink to="/" class="navbar-link">
+        <NuxtLink to="/" class="navbar-link" aria-label="About page">
           {{ $t('pageTitles.about') }}
         </NuxtLink>
       </li>
 
       <li class="navbar-item">
-        <NuxtLink to="/resume" class="navbar-link">
+        <NuxtLink to="/resume" class="navbar-link" aria-label="Resume page">
           {{ $t('pageTitles.resume') }}
         </NuxtLink>
       </li>
 
       <li class="navbar-item">
-        <NuxtLink to="/portfolio" class="navbar-link">
+        <NuxtLink to="/portfolio" class="navbar-link" aria-label="Portfolio page">
           {{ $t('pageTitles.portfolio') }}
         </NuxtLink>
       </li>
@@ -30,7 +30,7 @@
       </li> -->
 
       <li class="navbar-item">
-        <NuxtLink to="/contact" class="navbar-link">
+        <NuxtLink to="/contact" class="navbar-link" aria-label="Contact page">
           {{ $t('pageTitles.contact') }}
         </NuxtLink>
       </li>

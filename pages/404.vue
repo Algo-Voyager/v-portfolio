@@ -19,7 +19,7 @@ useHead({
       </div>
 
       <div class="text-xl text-[#fafafa]">
-        <span>The Page you are looking for doesn't exist or an other error occured. 😞</span>
+        <span>The page you are looking for doesn't exist or another error occurred. 😞</span>
         <span class="mx-auto w-40 py-2 mt-5 cursor-pointer font-semibold bg-ranko-500 text-[#1e1e1f] rounded text-sm" @click="router.back()">
           Go back
         </span>

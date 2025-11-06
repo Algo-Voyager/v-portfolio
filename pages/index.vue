@@ -24,7 +24,7 @@ function showTestimonial(id) {
   activeOverlay.value = true
 }
 
-function closeTestimonaial() {
+function closeTestimonial() {
   testimonialItem.value = {}
   activeModal.value = false
   activeOverlay.value = false
@@ -76,7 +76,7 @@ const { data: services } = await useFetch('/api/services')
       <div v-show="activeModal" class="overlay" :class="{ active: activeOverlay }" />
 
       <section class="testimonials-modal">
-        <button class="modal-close-btn" @click="closeTestimonaial">
+        <button class="modal-close-btn" @click="closeTestimonial">
           <ion-icon name="close-outline" />
         </button>
 

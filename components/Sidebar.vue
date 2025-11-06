@@ -25,9 +25,9 @@ function toggleMenu() {
         </p>
       </div>
 
-      <button class="info_more-btn" @click="toggleMenu">
-        <span>Show Contacts</span>
-        <ion-icon name="chevron-down" />
+      <button class="info_more-btn" @click="toggleMenu" :aria-expanded="isOpen" aria-label="Toggle contact information">
+        <span>{{ isOpen ? 'Hide Contacts' : 'Show Contacts' }}</span>
+        <ion-icon :name="isOpen ? 'chevron-up' : 'chevron-down'" />
       </button>
     </div>
 
@@ -59,7 +59,7 @@ function toggleMenu() {
               Github
             </p>
 
-            <a href="https://github.com/Algo-Voyager" class="contact-link" target="_blank">Algo-Voyager</a>
+            <a href="https://github.com/Algo-Voyager" class="contact-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile (opens in new tab)">Algo-Voyager</a>
           </div>
         </li>
 
@@ -73,7 +73,7 @@ function toggleMenu() {
               Linkedin
             </p>
 
-            <a href="https://www.linkedin.com/in/iampkumar" class="contact-link" target="_blank">Prashant Kumar</a>
+            <a href="https://www.linkedin.com/in/iampkumar" class="contact-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile (opens in new tab)">Prashant Kumar</a>
           </div>
         </li>
 
@@ -87,7 +87,7 @@ function toggleMenu() {
               LeetCode
             </p>
 
-            <a href="https://leetcode.com/vukoga/" class="contact-link" target="_blank">vukoga</a>
+            <a href="https://leetcode.com/vukoga/" class="contact-link" target="_blank" rel="noopener noreferrer" aria-label="LeetCode profile (opens in new tab)">vukoga</a>
           </div>
         </li>
 
@@ -101,7 +101,7 @@ function toggleMenu() {
               Codeforces
             </p>
 
-            <a href="https://codeforces.com/profile/_algo_voyager" class="contact-link" target="_blank">_algo_voyager</a>
+            <a href="https://codeforces.com/profile/_algo_voyager" class="contact-link" target="_blank" rel="noopener noreferrer" aria-label="Codeforces profile (opens in new tab)">_algo_voyager</a>
           </div>
         </li>
 

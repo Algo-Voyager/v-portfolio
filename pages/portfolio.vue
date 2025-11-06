@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import Flicking from '@egjs/vue3-flicking'
 import '@egjs/vue3-flicking/dist/flicking.css'
@@ -14,8 +14,14 @@ const { locale } = useI18n({ useScope: 'global' })
 const { data: projects } = await useFetch('/api/projects')
 const { data: categories } = await useFetch('/api/categories')
 
-const projectList = [...projects.value]
 const activeCategory = ref(0)
+
+const projectList = computed(() => {
+  if (activeCategory.value === 0) {
+    return projects.value || []
+  }
+  return (projects.value || []).filter(project => project.category.id === activeCategory.value)
+})
 const filterMenu = ref(false)
 const activeCategoryName = ref('')
 
@@ -104,11 +110,10 @@ function formatDate(dateStr) {
       </div>
 
       <ul class="project-list">
-        <li 
-          v-for="project in projectList" 
-          :key="project.id" 
-          :class="{ active: activeCategory === project.category.id || activeCategory === 0 }" 
-          class="project-item"
+        <li
+          v-for="project in projectList"
+          :key="project.id"
+          class="project-item active"
         >
           <a class="cursor-pointer" @click="showItem(project.id)">
 
