@@ -14,9 +14,9 @@ function toggleMenu() {
       <!-- Enhanced Avatar with Gradient Border and Glow -->
       <div class="avatar-wrapper">
         <div class="avatar-glow"></div>
+        <div class="avatar-ring"></div>
         <figure class="avatar-box">
           <img src="/images/my_photo.png" alt="Prashant Kumar" width="80">
-          <div class="avatar-ring"></div>
         </figure>
         <div class="status-badge">
           <span class="status-dot"></span>
@@ -279,7 +279,7 @@ function toggleMenu() {
   width: 110px;
   height: 110px;
   border-radius: 50%;
-  overflow: visible;
+  overflow: hidden;
   padding: 0 !important;
   margin: 0;
   z-index: 2;
@@ -338,24 +338,30 @@ function toggleMenu() {
 /* Rotating Ring */
 .avatar-ring {
   position: absolute;
-  inset: -8px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
   border: 2px dashed var(--vegas-gold);
   opacity: 0;
   transition: all 0.4s ease;
   animation: rotate 20s linear infinite;
+  pointer-events: none;
+  z-index: 1;
 }
 
-.avatar-box:hover .avatar-ring {
+.avatar-wrapper:hover .avatar-ring {
   opacity: 0.5;
 }
 
 @keyframes rotate {
   from {
-    transform: rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg);
   }
 }
 
