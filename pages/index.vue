@@ -143,22 +143,15 @@ onMounted(() => {
         <div class="stat-icon">
           <ion-icon name="code-outline" />
         </div>
-        <div class="stat-number" data-target="1000">0</div>
+        <div class="stat-number">1K+</div>
         <div class="stat-label">Problems Solved</div>
       </div>
       <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
         <div class="stat-icon">
-          <ion-icon name="trending-up-outline" />
+          <ion-icon name="cloud-outline" />
         </div>
-        <div class="stat-number" data-target="65">0</div>
-        <div class="stat-label">% Visibility Improved</div>
-      </div>
-      <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
-        <div class="stat-icon">
-          <ion-icon name="checkmark-done-outline" />
-        </div>
-        <div class="stat-number" data-target="99.8">0</div>
-        <div class="stat-label">% Azure Accuracy</div>
+        <div class="stat-number" data-target="3">0</div>
+        <div class="stat-label">Cloud Platforms</div>
       </div>
     </section>
 
