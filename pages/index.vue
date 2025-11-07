@@ -148,10 +148,10 @@ onMounted(() => {
       </div>
       <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
         <div class="stat-icon">
-          <ion-icon name="cloud-outline" />
+          <ion-icon name="briefcase-outline" />
         </div>
-        <div class="stat-number" data-target="3">0</div>
-        <div class="stat-label">Cloud Platforms</div>
+        <div class="stat-number stat-text">2+</div>
+        <div class="stat-label">Years Experience</div>
       </div>
     </section>
 
