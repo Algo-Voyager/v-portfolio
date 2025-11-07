@@ -68,7 +68,7 @@ onMounted(() => {
     })
   }, observerOptions)
 
-  document.querySelectorAll('.stat-number').forEach(counter => {
+  document.querySelectorAll('.stat-number[data-target]').forEach(counter => {
     counterObserver.observe(counter)
   })
 
@@ -143,22 +143,15 @@ onMounted(() => {
         <div class="stat-icon">
           <ion-icon name="code-outline" />
         </div>
-        <div class="stat-number" data-target="700">0</div>
+        <div class="stat-number stat-text">1K+</div>
         <div class="stat-label">Problems Solved</div>
       </div>
       <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
         <div class="stat-icon">
-          <ion-icon name="trending-up-outline" />
+          <ion-icon name="briefcase-outline" />
         </div>
-        <div class="stat-number" data-target="40">0</div>
-        <div class="stat-label">% Visibility Improved</div>
-      </div>
-      <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
-        <div class="stat-icon">
-          <ion-icon name="checkmark-done-outline" />
-        </div>
-        <div class="stat-number" data-target="100">0</div>
-        <div class="stat-label">% Azure Accuracy</div>
+        <div class="stat-number stat-text">1+</div>
+        <div class="stat-label">Years Experience</div>
       </div>
     </section>
 
@@ -174,7 +167,7 @@ onMounted(() => {
       </p>
 
       <p class="reveal-text">
-        My experience spans cloud platforms (AWS, Azure, GCP), backend development with microservices, and full-stack web applications. At Lucidity, I've improved multi-cloud visibility by <strong class="highlight">40%</strong>, reduced audit errors by <strong class="highlight">60%</strong>, and achieved <strong class="highlight">100% accuracy</strong> in Azure ASR detection. I'm also an active competitive programmer with a LeetCode rating of <strong class="highlight">1883 (Knight)</strong> and Codeforces Specialist rank, having solved <strong class="highlight">700+ problems</strong> across platforms.
+        My experience spans cloud platforms (AWS, Azure, GCP), backend development with microservices, and full-stack web applications. At Lucidity, I've improved multi-cloud visibility by <strong class="highlight">65%</strong>, reduced audit errors by <strong class="highlight">60%</strong>, and enhanced Azure ASR detection accuracy to <strong class="highlight">99.8%</strong>. I'm also an active competitive programmer with a LeetCode rating of <strong class="highlight">1883 (Knight)</strong> and Codeforces Specialist rank, having solved <strong class="highlight">1k+ problems</strong> across platforms.
       </p>
 
       <p class="reveal-text">
