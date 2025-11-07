@@ -171,7 +171,7 @@ onMounted(() => {
       </ul>
 
       <div class="modal-container" :class="{ active: activeModal }">
-        <div v-show="activeModal" class="overlay" :class="{ active: activeOverlay }" />
+        <div v-show="activeModal" class="overlay" :class="{ active: activeOverlay }" @click="closeItem" />
 
         <section class="project-modal block">
           <button class="modal-close-btn" @click="closeItem">
@@ -588,9 +588,52 @@ header {
 }
 
 /* Modal Styles */
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  z-index: -1;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.modal-container.active {
+  z-index: 1000;
+  opacity: 1;
+  pointer-events: all;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+  z-index: 1;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
 .project-modal {
   position: relative;
   max-width: 900px;
+  width: 90%;
   margin: 2rem auto;
   background: linear-gradient(135deg, rgba(30, 30, 30, 0.98), rgba(20, 20, 20, 0.98));
   backdrop-filter: blur(20px);
@@ -598,6 +641,19 @@ header {
   border-radius: 24px;
   padding: 2rem;
   box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  animation: scaleUp 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 .modal-close-btn {
@@ -760,12 +816,17 @@ header {
   }
 
   .project-modal {
-    margin: 1rem;
+    width: 95%;
+    margin: 1rem auto;
     padding: 1.5rem;
   }
 
   .modal-title {
     font-size: 1.5rem;
+  }
+
+  .modal-image-wrapper {
+    margin-bottom: 1.5rem;
   }
 
   .modal-meta {
@@ -801,6 +862,20 @@ header {
     right: 1rem;
     width: 40px;
     height: 40px;
+  }
+
+  .project-modal {
+    width: 98%;
+    margin: 0.5rem auto;
+    padding: 1rem;
+  }
+
+  .modal-content {
+    padding: 0 0.5rem;
+  }
+
+  .modal-title {
+    font-size: 1.25rem;
   }
 }
 </style>
