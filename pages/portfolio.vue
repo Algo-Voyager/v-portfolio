@@ -44,11 +44,8 @@ function closeItem() {
 }
 
 function formatDate(dateStr) {
-  // Parse the date string
-  const parsedDate = dayjs(dateStr);
-
-  // Format the date as "DD MMM YYYY"
-  return parsedDate.format('DD MMM, YYYY');
+  // Return the date string as is, since it's already formatted
+  return dateStr || '';
 }
 
 // Animation on mount
@@ -193,17 +190,17 @@ onMounted(() => {
             </h4>
 
             <div class="modal-meta">
-              <span class="meta-item">
+              <span v-if="activeItem.created_at" class="meta-item">
                 <ion-icon name="calendar-outline"></ion-icon>
                 {{ formatDate(activeItem.created_at) }}
               </span>
-              <span class="meta-divider">|</span>
-              <span class="meta-item">
+              <span v-if="activeItem.created_at && activeItem.category" class="meta-divider">|</span>
+              <span v-if="activeItem.category" class="meta-item">
                 <ion-icon :name="activeItem.category?.id === 1 ? 'code-slash-outline' : 'desktop-outline'"></ion-icon>
                 {{ locale === 'en' ? activeItem.category?.title?.en : activeItem.category?.title?.tr }}
               </span>
-              <span class="meta-divider">|</span>
-              <NuxtLink :to="activeItem.github_link" target="_blank" rel="noopener" class="github-link">
+              <span v-if="activeItem.category && activeItem.github_link" class="meta-divider">|</span>
+              <NuxtLink v-if="activeItem.github_link" :to="activeItem.github_link" target="_blank" rel="noopener" class="github-link">
                 <ion-icon name="logo-github"></ion-icon>
                 View on GitHub
               </NuxtLink>
