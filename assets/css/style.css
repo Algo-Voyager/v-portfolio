@@ -174,6 +174,26 @@ article {
   padding: 15px;
   box-shadow: var(--shadow-1);
   z-index: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.sidebar::before,
+article::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--vegas-gold), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.sidebar:hover::before,
+article:hover::before {
+  opacity: 1;
 }
 
 .separator {
@@ -530,6 +550,8 @@ main {
   border-radius: 14px;
   box-shadow: var(--shadow-2);
   z-index: 1;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
 }
 
 .service-item::before {
@@ -539,6 +561,17 @@ main {
   background: var(--bg-gradient-jet);
   border-radius: inherit;
   z-index: -1;
+  transition: all 0.4s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 40px rgba(255, 215, 0, 0.15);
+  border: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+.service-item:hover::before {
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.05), rgba(255, 140, 0, 0.05));
 }
 
 .service-icon-box { margin-bottom: 10px; }

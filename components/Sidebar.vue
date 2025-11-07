@@ -139,3 +139,154 @@ function toggleMenu() {
     </div>
   </aside>
 </template>
+
+<style scoped>
+/* Enhanced Sidebar Styles */
+.sidebar {
+  position: relative;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.sidebar::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--vegas-gold), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.sidebar:hover::after {
+  opacity: 1;
+}
+
+.avatar-box {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.avatar-box::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(255, 140, 0, 0.1));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: inherit;
+}
+
+.avatar-box:hover::before {
+  opacity: 1;
+}
+
+.avatar-box img {
+  transition: all 0.3s ease;
+}
+
+.avatar-box:hover img {
+  transform: scale(1.05);
+}
+
+.name {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.name::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--vegas-gold), var(--orange-yellow-crayola));
+  transition: width 0.3s ease;
+}
+
+.sidebar:hover .name::after {
+  width: 80%;
+}
+
+.contact-item {
+  transition: all 0.3s ease;
+  padding: 8px;
+  border-radius: 12px;
+}
+
+.contact-item:hover {
+  background: rgba(255, 215, 0, 0.05);
+  transform: translateX(5px);
+}
+
+.icon-box {
+  transition: all 0.3s ease;
+}
+
+.contact-item:hover .icon-box {
+  transform: scale(1.1) rotate(5deg);
+  background: linear-gradient(135deg, var(--vegas-gold), var(--orange-yellow-crayola));
+}
+
+.contact-link {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.contact-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--vegas-gold);
+  transition: width 0.3s ease;
+}
+
+.contact-item:hover .contact-link::after {
+  width: 100%;
+}
+
+.info_more-btn {
+  transition: all 0.3s ease;
+}
+
+.info_more-btn:hover {
+  transform: scale(1.05);
+}
+
+.info_more-btn ion-icon {
+  transition: transform 0.3s ease;
+}
+
+.sidebar.active .info_more-btn ion-icon {
+  transform: rotate(180deg);
+}
+
+/* Staggered Animation for Contact Items */
+.sidebar.active .contact-item {
+  animation: slideInLeft 0.4s ease-out backwards;
+}
+
+.sidebar.active .contact-item:nth-child(1) { animation-delay: 0.1s; }
+.sidebar.active .contact-item:nth-child(2) { animation-delay: 0.2s; }
+.sidebar.active .contact-item:nth-child(3) { animation-delay: 0.3s; }
+.sidebar.active .contact-item:nth-child(4) { animation-delay: 0.4s; }
+.sidebar.active .contact-item:nth-child(5) { animation-delay: 0.5s; }
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+</style>
