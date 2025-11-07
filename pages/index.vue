@@ -68,7 +68,7 @@ onMounted(() => {
     })
   }, observerOptions)
 
-  document.querySelectorAll('.stat-number').forEach(counter => {
+  document.querySelectorAll('.stat-number[data-target]').forEach(counter => {
     counterObserver.observe(counter)
   })
 
@@ -143,7 +143,7 @@ onMounted(() => {
         <div class="stat-icon">
           <ion-icon name="code-outline" />
         </div>
-        <div class="stat-number">1K+</div>
+        <div class="stat-number stat-text">1K+</div>
         <div class="stat-label">Problems Solved</div>
       </div>
       <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
