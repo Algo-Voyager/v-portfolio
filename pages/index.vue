@@ -150,7 +150,7 @@ onMounted(() => {
         <div class="stat-icon">
           <ion-icon name="briefcase-outline" />
         </div>
-        <div class="stat-number stat-text">2+</div>
+        <div class="stat-number stat-text">1+</div>
         <div class="stat-label">Years Experience</div>
       </div>
     </section>
