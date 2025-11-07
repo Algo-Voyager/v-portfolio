@@ -83,84 +83,6 @@ useHead({
       </ol>
     </section>
 
-    <!-- Coding Platforms Section -->
-    <section class="timeline">
-      <div class="title-wrapper">
-        <div class="icon-box">
-          <ion-icon name="code-slash-outline" />
-        </div>
-
-        <h3 class="h3">
-          Coding Platforms
-        </h3>
-      </div>
-
-      <ol class="timeline-list">
-        <li class="timeline-item">
-          <h4 class="h4 timeline-item-title">
-            <a href="https://leetcode.com/vukoga" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">
-              LeetCode - vukoga
-            </a>
-          </h4>
-
-          <p class="timeline-text">
-            Achieved a maximum rating of 1883 (Knight), solving over 300 problems.
-          </p>
-        </li>
-
-        <li class="timeline-item">
-          <h4 class="h4 timeline-item-title">
-            <a href="https://codeforces.com/profile/_algo_voyager" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">
-              Codeforces - _algo_voyager
-            </a>
-          </h4>
-
-          <p class="timeline-text">
-            Attained Specialist rank with a peak rating of 1448.
-          </p>
-        </li>
-      </ol>
-    </section>
-
-    <!-- Achievements Section -->
-    <section class="timeline">
-      <div class="title-wrapper">
-        <div class="icon-box">
-          <ion-icon name="trophy-outline" />
-        </div>
-
-        <h3 class="h3">
-          Achievements
-        </h3>
-      </div>
-
-      <ol class="timeline-list">
-        <li class="timeline-item">
-          <p class="timeline-text">
-            <span style="color: #FFA500; display: inline-block; margin-right: 5px;">•</span> Secured 380th position in the Codeforces Round 995
-          </p>
-        </li>
-
-        <li class="timeline-item">
-          <p class="timeline-text">
-            <span style="color: #FFA500; display: inline-block; margin-right: 5px;">•</span> Attained 154th rank in the LeetCode Weekly Contest 431
-          </p>
-        </li>
-
-        <li class="timeline-item">
-          <p class="timeline-text">
-            <span style="color: #FFA500; display: inline-block; margin-right: 5px;">•</span> Solved 700+ competitive programming problems across various platforms
-          </p>
-        </li>
-
-        <li class="timeline-item">
-          <p class="timeline-text">
-            <span style="color: #FFA500; display: inline-block; margin-right: 5px;">•</span> Contributed to open-source repositories, including GNOME Settings and Dino XMPP Client
-          </p>
-        </li>
-      </ol>
-    </section>
-
     <!-- Download Resume Button -->
     <section class="download-resume">
       <a
@@ -580,8 +502,6 @@ useHead({
 
 :deep(.timeline:nth-of-type(1)) { animation-delay: 0.1s; }
 :deep(.timeline:nth-of-type(2)) { animation-delay: 0.2s; }
-:deep(.timeline:nth-of-type(3)) { animation-delay: 0.3s; }
-:deep(.timeline:nth-of-type(4)) { animation-delay: 0.4s; }
 
 @keyframes fadeIn {
   from {
