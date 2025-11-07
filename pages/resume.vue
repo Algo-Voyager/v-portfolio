@@ -61,8 +61,8 @@ useHead({
 
           <ul class="timeline-text">
             <li><span style="color: #FFA500; display: inline-block; margin-right: 5px;">•</span> Built an Azure disk v1→v2 upgrade checker with CPL API, updated DB rules, and cut audit time by 60%.</li>
-            <li><span style="color: #FFA500; display: inline-block; margin-right: 5px;">•</span> Made Azure ASR detection 100% accurate by switching to Recovery Services and Compute APIs.</li>
-            <li><span style="color: #FFA500; display: inline-block; margin-right: 5px;">•</span> Implemented multi-cloud discovery for EKS, AKS, Databricks, and ROSA across AWS, Azure, and GCP, added pagination and least-privilege IAM, improving visibility by 40% and AKS tracking to 99.9%.</li>
+            <li><span style="color: #FFA500; display: inline-block; margin-right: 5px;">•</span> Enhanced Azure ASR detection accuracy to 99.8% by switching to Recovery Services and Compute APIs.</li>
+            <li><span style="color: #FFA500; display: inline-block; margin-right: 5px;">•</span> Implemented multi-cloud discovery for EKS, AKS, Databricks, and ROSA across AWS, Azure, and GCP, added pagination and least-privilege IAM, improving visibility by 65% and AKS tracking to 99.9%.</li>
             <li><span style="color: #FFA500; display: inline-block; margin-right: 5px;">•</span> Reduced AWS audit "Unknown" errors by 40% across 6k+ VMs by fixing SSM, IAM, and API throttling; added spanned-volume detection (Windows Dynamic Disks, LVM) to block unsupported disks in prod.</li>
           </ul>
         </li>

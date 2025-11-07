@@ -174,7 +174,7 @@ onMounted(() => {
       </p>
 
       <p class="reveal-text">
-        My experience spans cloud platforms (AWS, Azure, GCP), backend development with microservices, and full-stack web applications. At Lucidity, I've improved multi-cloud visibility by <strong class="highlight">40%</strong>, reduced audit errors by <strong class="highlight">60%</strong>, and achieved <strong class="highlight">100% accuracy</strong> in Azure ASR detection. I'm also an active competitive programmer with a LeetCode rating of <strong class="highlight">1883 (Knight)</strong> and Codeforces Specialist rank, having solved <strong class="highlight">700+ problems</strong> across platforms.
+        My experience spans cloud platforms (AWS, Azure, GCP), backend development with microservices, and full-stack web applications. At Lucidity, I've improved multi-cloud visibility by <strong class="highlight">65%</strong>, reduced audit errors by <strong class="highlight">60%</strong>, and enhanced Azure ASR detection accuracy to <strong class="highlight">99.8%</strong>. I'm also an active competitive programmer with a LeetCode rating of <strong class="highlight">1883 (Knight)</strong> and Codeforces Specialist rank, having solved <strong class="highlight">1k+ problems</strong> across platforms.
       </p>
 
       <p class="reveal-text">
