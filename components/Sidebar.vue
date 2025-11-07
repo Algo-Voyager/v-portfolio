@@ -18,10 +18,6 @@ function toggleMenu() {
         <figure class="avatar-box">
           <img src="/images/my_photo.png" alt="Prashant Kumar" width="80">
         </figure>
-        <div class="status-badge">
-          <span class="status-dot"></span>
-          <span class="status-text">Available</span>
-        </div>
       </div>
 
       <div class="info-content">
@@ -39,11 +35,6 @@ function toggleMenu() {
           <div class="stat-item">
             <ion-icon name="code-slash"></ion-icon>
             <span>Full Stack</span>
-          </div>
-          <div class="stat-separator"></div>
-          <div class="stat-item">
-            <ion-icon name="trophy"></ion-icon>
-            <span>Competitive</span>
           </div>
         </div>
       </div>
